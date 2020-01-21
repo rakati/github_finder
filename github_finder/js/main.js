@@ -6,8 +6,9 @@ $(document).ready(function(){
         $.ajax({
             url:'https://api.github.com/users/' + username,
             data:{
-                client_id: '48ef16ea2ae487aef373',
-                client_secret: '9f0634fc44db29a8177a86142568e2c8c68488c9'
+                // to increase rate limit I used my id and secret provide by github api
+                client_id: 'my_id',
+                client_secret: 'My_client_secret'
             }
         }).done(function(user){
             $.ajax({
